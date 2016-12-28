@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C36BAD0-58AD-4538-9693-85EA6E410864}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\BookCheckoutPolicy.cs" />
+    <Compile Include="Domain\BranchService.cs" />
+    <Compile Include="Domain\CheckoutException.cs" />
+    <Compile Include="Domain\CheckoutPolicies.cs" />
+    <Compile Include="Domain\CheckoutPolicy.cs" />
+    <Compile Include="Domain\IClassificationService.cs" />
+    <Compile Include="Domain\ScanStation.cs" />
+    <Compile Include="Util\CollectionUtil.cs" />
+    <Compile Include="Domain\Holding.cs" />
+    <Compile Include="Domain\HoldingService.cs" />
+    <Compile Include="Util\IllegalKeyException.cs" />
+    <Compile Include="Domain\LibraryException.cs" />
+    <Compile Include="Domain\MasterClassificationService.cs" />
+    <Compile Include="Domain\Material.cs" />
+    <Compile Include="Domain\MovieCheckoutPolicy.cs" />
+    <Compile Include="Util\MultiMap.cs" />
+    <Compile Include="Domain\Patron.cs" />
+    <Compile Include="Domain\PatronService.cs" />
+    <Compile Include="Portfolio\InvalidSymbolException.cs" />
+    <Compile Include="Portfolio\IStockLookupService.cs" />
+    <Compile Include="Portfolio\NasdaqStockLookupService.cs" />
+    <Compile Include="Portfolio\Portfolio.cs" />
+    <Compile Include="Portfolio\StockServiceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\Endpoint.cs" />
+    <Compile Include="Reporting\InventoryReport.cs" />
+    <Compile Include="Reporting\LibraryOfCongress.cs" />
+    <Compile Include="Reporting\MailDestination.cs" />
+    <Compile Include="Reporting\Message.cs" />
+    <Compile Include="Reporting\IReport.cs" />
+    <Compile Include="Reporting\ReportMailer.cs" />
+    <Compile Include="Util\TimeService.cs" />
+    <Compile Include="Util\ListUtil.cs" />
+    <Compile Include="VideoStore\Customer.cs" />
+    <Compile Include="VideoStore\Movie.cs" />
+    <Compile Include="VideoStore\Rental.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tips.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

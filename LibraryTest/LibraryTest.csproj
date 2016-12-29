@@ -63,16 +63,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\BookCheckoutPolicyTest.cs" />
-    <Compile Include="Domain\BranchServiceTest.cs" />
-    <Compile Include="Domain\CheckoutPolicyTest.cs" />
-    <Compile Include="Domain\HoldingServiceTest.cs" />
-    <Compile Include="Domain\HoldingTest.cs" />
-    <Compile Include="Domain\MasterClassificationServiceTest.cs" />
-    <Compile Include="Domain\MovieCheckoutPolicyTest.cs" />
-    <Compile Include="Domain\PatronServiceTest.cs" />
-    <Compile Include="Domain\PatronTest.cs" />
-    <Compile Include="Domain\ScanStationTest.cs" />
+    <Compile Include="Model\BookCheckoutPolicyTest.cs" />
+    <Compile Include="Model\BranchServiceTest.cs" />
+    <Compile Include="Model\CheckoutPolicyTest.cs" />
+    <Compile Include="Model\HoldingServiceTest.cs" />
+    <Compile Include="Model\HoldingTest.cs" />
+    <Compile Include="Model\MasterClassificationServiceTest.cs" />
+    <Compile Include="Model\MovieCheckoutPolicyTest.cs" />
+    <Compile Include="Model\PatronServiceTest.cs" />
+    <Compile Include="Model\PatronTest.cs" />
+    <Compile Include="Model\ScanStationTest.cs" />
     <Compile Include="Portfolio\PortfolioTest.cs" />
     <Compile Include="Portfolio\StubStockLookupService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
